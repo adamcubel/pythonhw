@@ -17,7 +17,7 @@ if filename:
         print(line)
         print(totalLines)
         if line.rstrip().isnumeric():
-            totalLines = totalLines + 1
+            totalLines += 1
             total += float(line.rstrip())
 
 print('avg from file: ' + str(total / totalLines))
